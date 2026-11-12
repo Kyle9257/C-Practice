@@ -417,8 +417,8 @@ int main() {
     void (*p1)() noexcept = f1;   // OK：类型匹配
     void (*p2)()          = f2;   // OK：类型匹配
 
-    // 下面两条在 C++17 是编译错误，先注释掉，自行取消注释体验：
-    // void (*p3)()          = f1;   // 错误：noexcept 函数不能赋给非 noexcept 指针
+    // 赋值只能"丢弃承诺"，不能"增加承诺"：
+    // void (*p3)()          = f1;   // OK：noexcept 可隐式转成普通函数指针（C++17 允许）
     // void (*p4)() noexcept = f2;   // 错误：非 noexcept 函数不能赋给 noexcept 指针
 
     std::cout << std::boolalpha;

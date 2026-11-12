@@ -12,7 +12,7 @@ Widget::Widget(int value) : pImpl(std::make_unique<Impl>(value)) {}
 Widget::~Widget() = default;   // 必须在 Impl 完整定义之后才能 default
 
 Widget::Widget(const Widget& o) : pImpl(std::make_unique<Impl>(o.pImpl->value)) {
-    std::cout << "  copy ctor\n";
+    std::cout << "  赋值构造函数\n";
 }
 Widget::Widget(Widget&&) noexcept = default;
 

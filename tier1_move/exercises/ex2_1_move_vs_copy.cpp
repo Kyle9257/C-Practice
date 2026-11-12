@@ -3,6 +3,8 @@
 #include <utility>
 #include <vector>
 
+//移动还是复制
+
 struct Widget {
     std::string data;
     Widget(const std::string& s) : data(s) {}
