@@ -56,20 +56,34 @@ unordered_map 遍历顺序不确定:
 **验收点**：
 - [ ] 能说出 map（红黑树 O(log n)、有序）与 unordered_map（哈希、平均 O(1)、无序）的取舍
 
-## 练习 3 泛型算法四件套
+## 练习 3 泛型算法六大类
 
-**源码** `exercises/ex03_algorithms.cpp`（sort / find_if / transform / accumulate）。**输出**：
+**源码** `exercises/ex03_algorithms.cpp`，覆盖排序 / 查找 / 修改拷贝 / 重排 / 数值 / C++20 ranges。**输出**：
 
 ```
-排序后: 1 2 3 5 8 9
-第一个 >5 的是: 8
-乘 2 后: 2 4 6 10 16 18
-求和: 28
+sort 升序:       1 2 3 5 6 8 9
+sort 降序:       9 8 6 5 3 2 1
+stable_sort(key): (1,b) (1,d) (2,a) (2,c)   // key 相同保持原顺序
+partial_sort 前3: 1 2 4 9 8 7 5
+按末位数字排序: 31 22 15 7 48
+find(7):        命中
+lower_bound(7) 下标 = 3   upper_bound(7) 下标 = 4
+6 应插入下标 = 3   // 保持有序
+transform 平方:  1 4 9 16 25
+copy_if 偶数:    4 16
+partition 偶数前置: 8 2 6 4  |   5 3 7 1
+next_permutation: [123] [132] [213] [231] [312] [321]
+sum = 15   prod = 120   前缀和: 1 3 6 10 15   min = 1   max = 5
+ranges 管道:     90 80 60
 ```
 
 **验收点**：
-- [ ] 能写出 sort、find_if、transform、accumulate 四个算法的调用
-- [ ] 能说出 accumulate 在 `<numeric>` 而非 `<algorithm>`
+- [ ] 能说清 `sort` / `stable_sort` / `partial_sort` 的取舍（稳定 / 只排前 k 个）
+- [ ] 能写出 `lower_bound` / `upper_bound` / `equal_range` 二分三件套，并懂「未命中给出插入位置」
+- [ ] 能组合 `transform` + `copy_if` + `back_inserter` 做声明式数据变换
+- [ ] 能说清 `partition` 与 `next_permutation` 的用途
+- [ ] 能说出 `accumulate` / `partial_sum` 在 `<numeric>`，以及 `min/max_element` 在 `<algorithm>`
+- [ ] 能读懂 `ranges::filter | transform | take` 管道写法（C++20）
 
 ## 练习 4 remove_if + erase 与 lower_bound
 
@@ -140,6 +154,25 @@ STL 算法: 220
 **验收点**：
 - [ ] 能用 copy_if + transform + accumulate 组合出声明式写法
 - [ ] 认同「能用算法就别手写循环」，边界条件由算法保证
+
+## 练习 9 容器常用操作
+
+**目录** `container_exercises/`，每个容器一个独立文件，统一按「增→查→改→删→遍历→排序」演示：
+
+| 文件 | 容器 | 要点 |
+|------|------|------|
+| `vector.cpp` | vector | 随机访问 O(1)，尾插均摊 O(1)，中间插入 O(n) |
+| `list.cpp` | list | 头尾插删 O(1)，无随机访问，成员 `sort`/`splice`/`unique` |
+| `map.cpp` | map | 红黑树有序，`[]` 会插入、`at`/`find` 不会，支持范围查找 |
+| `unordered_map.cpp` | unordered_map | 哈希点查 O(1)，无序，不支持范围查找/排序 |
+| `set.cpp` | set | 自动去重+有序，不支持修改元素 |
+| `deque.cpp` | deque | 头尾插删 O(1)，支持随机访问，中间插入 O(n) |
+
+**验收点**：
+- [ ] 能写出 vector 的 push_back / emplace_back / insert / erase / at / sort
+- [ ] 能说出 list 与 vector 差异：头插 O(1)、无随机访问、成员 sort/splice/unique
+- [ ] 能说清 map 的 `[]` 会插入不存在的 key，`find`/`at` 不会
+- [ ] 能说清 unordered_map / set 不支持范围查找，set 不支持修改元素
 
 ---
 

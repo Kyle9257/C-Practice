@@ -2,6 +2,7 @@
 #include <iostream>
 
 // Impl 的完整定义只出现在 .cpp 里，头文件的用户看不到
+//Pointer to Implementation (PIMPL) 设计模式：隐藏实现细节，减少编译依赖
 struct Widget::Impl {
     int value;
     explicit Impl(int v) : value(v) { std::cout << "  Impl 构造\n"; }

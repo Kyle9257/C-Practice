@@ -13,14 +13,18 @@ int sum(T first, Rest... rest) {
 //展开时左边紧贴的表达式是“模式”，会被复制到每个元素
 template<typename T, typename... Rest>
 int sum2(T first, Rest... rest){
-    return first + sum2(rest...)
+    return first + sum2(rest...);
 }
-
 
 // 用 sizeof... 统计参数个数
 template <typename... Args>
 void show_count(Args... args) {
     std::cout << "参数个数: " << sizeof...(args) << "\n";
+}
+
+template<typename T, typename...Args>
+int my_sum(T first, Args... rest){
+    return first + my_sum(rest...);
 }
 
 int main() {

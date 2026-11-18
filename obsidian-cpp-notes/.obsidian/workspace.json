@@ -1,0 +1,249 @@
+{
+  "main": {
+    "id": "6ef1105976b5a635",
+    "type": "split",
+    "children": [
+      {
+        "id": "334b29b1669d78f6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e4896d6e8b190756",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-STL容器/std-list.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "std-list"
+            }
+          },
+          {
+            "id": "06079eaacba41f7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-语法细节/std输出格式控制.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "std输出格式控制"
+            }
+          },
+          {
+            "id": "8429029f94577195",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-STL容器/std-list.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "std-list"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d6afa6bcc8dd6745",
+    "type": "split",
+    "children": [
+      {
+        "id": "affd8e5e93bac45f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "64c31bb2f8f41462",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "5fe9715015d9bc00",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "300e681d691eb4f6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "12125bc0be0923ac",
+    "type": "split",
+    "children": [
+      {
+        "id": "9f8739e14833c09f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "78f014a4c38f9310",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "02-STL容器/std-list.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "0179f9586d29dae3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "02-STL容器/std-list.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "746fb781ed4ef26b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "9bd59c5ed8965bc9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "f0bba9150fba24b9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "02-STL容器/std-list.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "e4896d6e8b190756",
+  "lastOpenFiles": [
+    "02-STL容器/std-map.md",
+    "02-STL容器/std-list.md",
+    "06-学习路径/tier0-STL应用.md",
+    "00-术语卡片/pimpl.md",
+    "00-术语卡片/lower_bound 与 upper_bound.md",
+    "00-术语卡片/红黑树.md",
+    "02-STL容器/std-unordered-map.md",
+    "std-unordered-set.md",
+    "00-术语卡片/哈希表.md",
+    "02-STL容器/std-vector容器.md",
+    "06-学习路径/C++补课执行表.md",
+    "06-学习路径/C++学习路径总纲.md",
+    "01-语法细节/std输出格式控制.md",
+    "00-术语卡片/Rule of Five.md",
+    "00-术语卡片/移动语义.md",
+    "06-学习路径/tier1-移动语义.md",
+    "06-学习路径/tier2-模板.md",
+    "06-学习路径/tier3-惯用法.md",
+    "06-学习路径/tier4-工具链.md",
+    "未命名.md",
+    "00-术语卡片/SFINAE.md",
+    "00-术语卡片/完美转发.md",
+    "05-模板/术语卡片模板.md",
+    "README.md",
+    "未命名",
+    "06-学习路径"
+  ]
+}

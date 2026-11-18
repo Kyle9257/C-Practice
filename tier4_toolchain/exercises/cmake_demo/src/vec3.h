@@ -10,6 +10,7 @@ struct Vec3 {
         return {x + o.x, y + o.y, z + o.z};
     }
 
+    //点积
     double dot(const Vec3& o) const {
         return x * o.x + y * o.y + z * o.z;
     }

@@ -3,6 +3,7 @@
 
 
 //1、定义impl(头文件里只有前向声明，这里不全定义，头文件里看不到任何私有成员)
+//这里类用于管理私有成员变量，类似一个stuct
 class widgetPractice::Impl {
     public:
     int counter = 0;

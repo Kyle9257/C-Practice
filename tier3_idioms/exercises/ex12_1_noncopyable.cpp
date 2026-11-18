@@ -1,6 +1,7 @@
 #include <iostream>
 #include <utility>
 
+//禁止拷贝类
 class NonCopyable {
 public:
     NonCopyable() = default;
