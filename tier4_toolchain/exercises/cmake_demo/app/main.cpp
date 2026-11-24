@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    Vec3 a(3, 0, 0);
+    Vec3 a(3, 61, 10);
     Vec3 b(0, 4, 0);
 
     Vec3 c = a + b;

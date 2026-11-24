@@ -27,6 +27,12 @@ C++Practice/
 │   ├── README.md
 │   ├── 验收清单.md
 │   └── exercises/
+├── tier5_fundamentals/        # 13 个基础缺口补全练习
+│   ├── README.md
+│   ├── 验收清单.md
+│   ├── build_all.ps1
+│   ├── exercises/
+│   └── multithreading/        # 生命周期、停止、同步、通信、future、线程池
 ├── C++补课执行表.md           # 总纲（15 项 → 四梯队）
 ├── C++路线图标注清单.md        # 缺口标注（Middle 103 + Senior 46）
 └── CppDeveloperRoadmap-zh.drawio.svg
@@ -34,7 +40,7 @@ C++Practice/
 
 ## 学习顺序
 
-**梯队 0 → 1 → 2 → 3 → 4**，每个梯队内按练习编号（ex01 → ex02 → …）顺序。
+**梯队 0 → 1 → 2 → 3 → 4 → 5**，每个梯队内按练习编号（ex01 → ex02 → …）顺序。
 
 每个梯队的流程：读 `README.md` 敲练习 → 对照输出 → 勾 `验收清单.md` → 全勾完进下一梯队。
 
@@ -49,6 +55,12 @@ g++ -std=c++20 -Wall -Wextra -O2 -o out 文件名.cpp && ./out
 
 # concepts 练习需要 C++20
 g++ -std=c++20 -Wall -Wextra -O2 -o out ex8_1_concept.cpp && ./out
+
+# 基础补全练习（统一编译）
+powershell -ExecutionPolicy Bypass -File tier5_fundamentals/build_all.ps1
+
+# 多线程独立专题
+powershell -ExecutionPolicy Bypass -File tier5_fundamentals/multithreading/build_all.ps1
 
 # pimpl 多文件
 g++ -std=c++17 -Wall -Wextra -O2 -o pimpl pimpl/widget.cpp pimpl/main.cpp && ./pimpl

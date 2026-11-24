@@ -26,4 +26,8 @@ int main() {
     std::cout << "v 是 double: " << std::get<double>(v) << "\n";
     v = "hello";
     std::cout << "v 是 string: " << std::get<std::string>(v) << "\n";
+
+    //可以根据自己的需要赋值为想要的类型，但是具体类型，是最后一次赋值决定
+    v = 42;
+    std::cout << "v-" << std::get<int>(v) << "\n";
 }

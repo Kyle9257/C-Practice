@@ -32,5 +32,5 @@
 - [[C++学习路径总纲]]（项目四梯队总入口）
 - [[C++补课执行表]]（15 项节点 + 资源章节对照）
 - [[tier0-STL应用]] · [[tier1-移动语义]] · [[tier2-模板]] · [[tier3-惯用法]] · [[tier4-工具链]]
-- [[std-map]] · [[std-unordered-map]] · [[lower_bound 与 upper_bound]]
-- [[移动语义]] · [[完美转发]] · [[SFINAE]] · [[pimpl]] · [[Rule of Five]]
+- [[std-map]] · [[std-unordered-map]] · [[std-set]] · [[std-unordered-set]] · [[std-vector容器]] · [[std-list]] · [[std-deque]] · [[lower_bound 与 upper_bound]]
+- [[移动语义]] · [[右值引用]] · [[万能引用]] · [[完美转发]] · [[noexcept]] · [[SFINAE]] · [[type-traits]] · [[concept]] · [[变参模板]] · [[折叠表达式]] · [[模板特化]] · [[pimpl]] · [[Rule of Five]] · [[copy-and-swap]] · [[CRTP]]

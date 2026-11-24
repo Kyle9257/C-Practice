@@ -17,13 +17,13 @@ void print(const char* tag, const C& c) {
 
 int main() {
     std::deque<int> d;
-
+    
     // ---- 增 ----
     d.push_back(3);                       // 尾插
     d.push_front(1);                      // 头插（vector 没有）
     d.push_back(5);
-    d.emplace_front(0);                   // 原地构造头插
-    d.insert(d.begin() + 2, 2);           // 中间插入（支持随机访问，可 +n）
+    d.emplace_front(1);                   // 原地构造头插
+    d.insert(d.begin() + 2, 200);           // 中间插入（支持随机访问，可 +n）
     print("增后:", d);                    // 0 1 2 3 5
 
     // ---- 查 / 取 ----
